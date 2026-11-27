@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五子棋 Gomoku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>五子棋</h1>
+    <div class="toolbar">
+      <div class="mode">
+        <label><input type="radio" name="mode" value="pvp" checked> 双人对战</label>
+        <label><input type="radio" name="mode" value="pve"> 人机对战</label>
+      </div>
+      <div class="actions">
+        <button id="btnRestart">重新开始</button>
+        <button id="btnUndo">悔棋</button>
+      </div>
+    </div>
+    <div class="status" id="status">黑棋先行</div>
+    <canvas id="board" width="600" height="600"></canvas>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
