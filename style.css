@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: linear-gradient(135deg, #f5f0e6 0%, #e8dcc8 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #5a3e2b;
+  margin-bottom: 16px;
+  letter-spacing: 8px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mode label {
+  margin-right: 14px;
+  color: #5a3e2b;
+  cursor: pointer;
+}
+
+.actions button {
+  background: #8b5a2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.actions button:hover {
+  background: #6d4520;
+}
+
+.status {
+  height: 28px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #8b5a2b;
+  margin-bottom: 8px;
+}
+
+#board {
+  background: #e3b969;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(90, 62, 43, 0.35);
+  cursor: pointer;
+  max-width: 92vw;
+  height: auto;
+}
